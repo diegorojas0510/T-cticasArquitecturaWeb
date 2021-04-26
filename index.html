@@ -4,6 +4,7 @@
 <head>
 	<!--Este permite decir que los caracteres que vamos a manajear son caracteres latinos ejmpo la ñ para eso se una UFT-8-->
 	<meta charset="UTF-8">
+	<!--Con esta etiqueta se hace el diseño web responsivo para que adapte a la pantalla en cualquier dispositivo-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Esta etuqueta nos dice quien es el nombre del autor-->
 	<meta name="author" content="Diego Rojas Marin">
@@ -13,31 +14,42 @@
 	<meta name="keywords" content="Tácticas de Arquitectura, html, consultora de software de madrid España">
 	<!--Etiqueta compuesta para dar el título de la página-->
 	<title>Tácticas de Arquitectura</title>
+	<!--Boostrap CSS Aquí traemos el stilo de boostrap5-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+	<!--Estilos de Fontawesome CSS-->
+	<script src="https://kit.fontawesome.com/373e6cc2c5.js" crossorigin="anonymous"></script>
+
 	<!--Vincula las hojas de estilo y podemos poner la imagen que aparecerá en el navegador-->
 	<link rel="icon" href="img/sena.png">
-<!--Con esto vinculamos los estilos que trae google para estilos css-->
-	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 
+	<!--Con esto vinculamos los estilos que trae google para estilos css-->
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/estilo.css">
+
 
 </head>
 
 <body>
+	<!--Aquí ponemos whatsapp para que se quede dija en la página-->
 	<div class="btn-whatsapp">
 		<a href="https://api.whatsapp.com/send?phone=3125390702" target="_blank">
-		<img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="whatsapp">
+			<img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="whatsapp">
 		</a>
-		</div>
+	</div>
 
 	<div class="contenedor">
 
-	<!--=====================================
+		<!--=====================================
 	SECCION 1
 	======================================-->
 
 		<header class="fila">
 
-			<div id="logo" class="col-lg-2 col-md-2 col-sm-3 col-xs-12">Logotipo</div>
+			<div id="logo" class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+				<img src="img/sena.png" alt="avatar04" style="width: 100px; height: auto;">
+			</div>
 
 			<div class="col-lg-8 col-md-8 col-sm-6 col-xs-0"></div>
 
@@ -50,7 +62,9 @@
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 
 					<center id="icono1">
-						<p>F</p>
+						<p>
+							<img src="img/facebook.png" alt="facebook">
+						</p>
 					</center>
 
 				</div>
@@ -75,7 +89,7 @@
 
 		</header>
 
-	<!--=====================================
+		<!--=====================================
 	SECCION 2
 	======================================-->
 
@@ -92,7 +106,7 @@
 
 		</nav>
 
-	<!--=====================================
+		<!--=====================================
 	SECCION 3
 	======================================-->
 
@@ -130,38 +144,54 @@
 
 		</section>
 
-	<!--=====================================
+		<!--=====================================
 	SECCION 4
 	======================================-->
 
 		<section id="seccion4" class="fila">
 
 			<aside id="izq" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-			
+
 				<ul>
-			
+
 					<li><a href="https://www.youtube.com/watch?v=a8YpqVbtf6A">El patrón de arquitectura</a></li>
-					<li><a href="https://openwebinars.net/blog/que-es-prueba-de-rendimiento-software/">Rendimiento</a></li>
-					<li><a href="https://highscalability.wordpress.com/tag/despliegue-de-software/">Desplegabilidad</a></li>
-					<li><a href="https://pacifitic.org/que-es-el-testing-de-software-y-por-que-es-tan-importante-en-el-desarrollo-de-software/">Testeabilidad</a></li>
-			
-					<li> <video autoplay controls loop width="400" height="200">
+					<li><a href="https://openwebinars.net/blog/que-es-prueba-de-rendimiento-software/">Rendimiento</a>
+					</li>
+					<li><a href="https://highscalability.wordpress.com/tag/despliegue-de-software/">Desplegabilidad</a>
+					</li>
+					<li><a
+							href="https://pacifitic.org/que-es-el-testing-de-software-y-por-que-es-tan-importante-en-el-desarrollo-de-software/">Testeabilidad</a>
+					</li>
+
+					<!--li> <video autoplay controls loop width="300" height="200">
 							<source src="audio/El patrón de arquitectura.mp4" type="video/mp4">
 						</video>
-					</li>
+					</li-->
 				</ul>
 			</aside>
 
 			<article class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
 				<h1>Rendimiento</h1>
-				<p><img src="img/optimizacion_web.png">Las pruebas de rendimiento son aquellas pruebas que someten a un sistema a una carga de trabajo con el fin de medir su velocidad, fiabilidad y estabilidad en esas condiciones de trabajo.
+				<p><img src="img/optimizacion_web.png">Las pruebas de rendimiento son aquellas pruebas que someten a un
+					sistema a una carga de trabajo con el fin de medir su velocidad, fiabilidad y estabilidad en esas
+					condiciones de trabajo.
 
 					Los objetivos de estas pruebas son varios:</p>
 				<br>
-				<p>Localizar cuellos de botella. Por ejemplo, si hay mucha carga de usuarios y el sistema colapsa o los tiempos de respuesta son muy altos, estas pruebas nos sirven para detectar dónde está el problema, si es debido a que el sistema se queda sin CPU, si se queda sin memoria, o si el ancho de banda es insuficiente. </p><br>
-				<p>Identificar y localizar problemas de rendimiento en la aplicación. Por ejemplo, si observamos que cierta funcionalidad de la aplicación tiene un tiempo de respuesta muy alto, a partir de ahí tenemos que ver por qué ocurre y cómo optimizarlo. Es decir, no sólo nos permite encontrar el problema rendimiento, sino que también ayuda a localizar dónde está ese problema de rendimiento para poder subsanarlo.</p><br>
-				<p>Verificar el cumplimiento de los SLA (Acuerdos de Nivel de Servicio). Por ejemplo, si tenemos una aplicación que prevé tener unos mil usuarios de forma concurrente y necesitamos que los tiempos de respuesta sean inferiores a 3 segundos. Podemos ejecutar una prueba con esas condiciones y ver esos tiempos de respuesta.</p>
+				<p>Localizar cuellos de botella. Por ejemplo, si hay mucha carga de usuarios y el sistema colapsa o los
+					tiempos de respuesta son muy altos, estas pruebas nos sirven para detectar dónde está el problema,
+					si es debido a que el sistema se queda sin CPU, si se queda sin memoria, o si el ancho de banda es
+					insuficiente. </p><br>
+				<p>Identificar y localizar problemas de rendimiento en la aplicación. Por ejemplo, si observamos que
+					cierta funcionalidad de la aplicación tiene un tiempo de respuesta muy alto, a partir de ahí tenemos
+					que ver por qué ocurre y cómo optimizarlo. Es decir, no sólo nos permite encontrar el problema
+					rendimiento, sino que también ayuda a localizar dónde está ese problema de rendimiento para poder
+					subsanarlo.</p><br>
+				<p>Verificar el cumplimiento de los SLA (Acuerdos de Nivel de Servicio). Por ejemplo, si tenemos una
+					aplicación que prevé tener unos mil usuarios de forma concurrente y necesitamos que los tiempos de
+					respuesta sean inferiores a 3 segundos. Podemos ejecutar una prueba con esas condiciones y ver esos
+					tiempos de respuesta.</p>
 
 
 			</article>
@@ -173,7 +203,7 @@
 				<form>
 					<!--Con placeholder determinamos el valor que tendra la casilla de texto-->
 					<input type="text" placeholder="Usuario" value="" required>
-					
+
 					<!--====================================== 
 						Aquí ponemos la etiqueta de typo password para que me oculte los caracteres que escribo en la casilla de texto, hacemos referencia al atributo de seguridad
 						Aquí garantizamos en cierta parte la seguridad ya que le decimos que el valor escrito debe ser requerido antes de hacer el envió
@@ -181,7 +211,7 @@
 					======================================-->
 					<input type="password" placeholder="Contraseña" value="" required>
 					<!--Etiqueta de tipo submit para el botón de enviar-->
-					<input type="submit" value="Enviar Formulario">
+					<input type="submit" class="btn btn-primary" value="Enviar Formulario">
 				</form>
 
 			</aside>
@@ -193,7 +223,7 @@
 
 		</section>
 
-	<!--=====================================
+		<!--=====================================
 	SECCION 5
 	======================================-->
 		<!--Con la etiqueta Iframe podemos embebido el mapa de google.con esto podemos decir que nuestra página es interoperable ya que funciona con 
@@ -208,20 +238,39 @@
 
 		</section>
 
-	<!--=====================================
+		<!--=====================================
 	SECCION 6
 	======================================-->
 
 		<footer class="fila">
 
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&copy; Todos los derechos reservados Diego Rojas Marin.
-			</div>
-			<hr>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">25 de abril 2021 V1.</div>
 
+
+			<div class="redes-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<ul>
+					<li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<img src="img/sena.png" alt="sena" style="width: 30px; height: 30px; text-align: left;">
+				Diego Rojas Marin &copy;2021 V1.
+			</div>
 		</footer>
 
 	</div>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+		crossorigin="anonymous"></script>
 
 </body>
 
